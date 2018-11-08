@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">#iTextMoSiMayor</string>
+    <string name="navPrimary">Primary</string>
+    <string name="resolved">Resolved</string>
+    <string name="navDepartments">Departments</string>
+    <string name="msgUnread">Unread</string>
+    <string name="navOpen">Open</string>
+    <string name="navResolved">Resolved </string>
+    <string name="navManage">Manage</string>
+    <string name="title_activity_mayor_navigation_bar">MayorNavigationBar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="forwardMessage">Forward Message</string>
+    <string name="markedDuplicate">Mark as Duplicate</string>
+    <string name="markedImportant">Mark as Important</string>
+    <string name="markedCompleted">Check</string>
+    <string name="navUnassigned">Unassigned</string>
+    <string name="sendMessageHint">Enter message</string>
+    <string name="navImportant">Important</string>
+    <string name="addressExample">Sta. Cruz, Cebu City</string>
+    <string name="navAll">All</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="send">Send</string>
+    <string name="forwarded_to">Forwarded to </string>
+    <string name="ticket_is">Ticket is </string>
+    <string name="navNameSample">Tommy Osmena</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">Email Address</string>
+    <string name="prompt_password">Password</string>
+    <string name="forgot_password_lbl">Forgot Password</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="not_a_member_lbl">Not a member? Sign Up Now!</string>
+    <string name="btnFacebookLogin">Facebook</string>
+    <string name="btnGoogleLogin">Google</string>
+    <string name="number_sample">+639055401529</string>
+    <string name="navSettings">Settings</string>
+    <string name="title_activity_main_messages_fragment">MainMessagesFragment</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_messages_fragment">MessagesFragment</string>
+    <string name="verificationCodeHint">Verification Code</string>
+    <string name="submitButton">SUBMIT</string>
+    <string name="resendCodeButton">Resend Code</string>
+    <string name="editFirstNameLbl">First Name</string>
+    <string name="editLastName">Last Name</string>
+    <string name="mobNoHint">Mobile No.</string>
+    <string name="mobnumber_sample">9055401529</string>
+    <string name="MobileNumberHintEx">Mobile no. ex. 09055401529</string>
+    <string name="plus_six_three">+63</string>
+    <string name="departmentStringSample">Police Department</string>
+    <string name="assignedCodeLbl">Assigned Code</string>
+    <string name="usernameLbl">Username</string>
+    <string name="forward">Forward</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_primary"
+            android:title="@string/navPrimary" />
+        <item
+            android:id="@+id/nav_resolved"
+            android:title="@string/navResolved" />
+        <item
+            android:id="@+id/nav_all"
+            android:title="@string/navAll" />
+    </group>
+
+    <item android:title="@string/navManage">
+        <menu>
+            <item
+                android:id="@+id/nav_departments"
+                android:title="@string/navDepartments" />
+            <!--<item-->
+                <!--android:id="@+id/nav_settings"-->
+                <!--android:title="@string/navSettings" />-->
+        </menu>
+    </item>
+
+</menu>
