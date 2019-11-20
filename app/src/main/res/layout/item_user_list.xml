@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140dp"
+    android:layout_height="200dp"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="2dp">
+
+    <ImageView
+        android:id="@+id/imgPP"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="User"
+        app:srcCompat="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="145dp"
+        android:text="Tommy Osmena"
+        android:textAlignment="center" />
+
+</com.google.android.material.card.MaterialCardView>

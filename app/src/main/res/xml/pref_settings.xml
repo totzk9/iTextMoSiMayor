@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="messageCount"
+            android:summary="Counts messages received and shows it on tabs"
+            android:title="Show message count" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
