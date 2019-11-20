@@ -5,23 +5,32 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_primary"
-            android:title="@string/navPrimary" />
+            android:title="@string/navMessages"
+            android:icon="@drawable/ic_messages"/>
         <item
             android:id="@+id/nav_resolved"
-            android:title="@string/navResolved" />
+            android:title="@string/navResolved"
+            android:icon="@drawable/ic_checked"/>
         <item
-            android:id="@+id/nav_all"
-            android:title="@string/navAll" />
+            android:id="@+id/nav_confidential"
+            android:title="@string/navConfidential"
+            android:icon="@drawable/ic_move_confidential" />
+        <item
+            android:id="@+id/nav_deleted"
+            android:title="@string/navDeleted"
+            android:icon="@drawable/ic_delete" />
     </group>
 
     <item android:title="@string/navManage">
         <menu>
             <item
-                android:id="@+id/nav_departments"
-                android:title="@string/navDepartments" />
-            <!--<item-->
-                <!--android:id="@+id/nav_settings"-->
-                <!--android:title="@string/navSettings" />-->
+                android:id="@+id/nav_assignees"
+                android:title="@string/navAssignees"
+                android:icon="@drawable/ic_assignees"/>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="@string/navSettings"
+                android:icon="@drawable/ic_menu_manage" />
         </menu>
     </item>
 

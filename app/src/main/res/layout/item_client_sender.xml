@@ -1,42 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviewClient"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:layout_marginTop="8dp"
     android:layout_marginEnd="8dp"
-    android:layout_marginBottom="8dp">
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
 
-    <RelativeLayout
-        android:id="@+id/message_root"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:background="@drawable/rect_round_white">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txtMessage"
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView_message_time"
-            android:layout_alignEnd="@id/txtMessage"
-            android:minWidth="120dp"
-            android:paddingStart="10dp"
-            android:paddingTop="6dp"
-            android:paddingEnd="10dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-            tools:text="@string/lorem_ipsum" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView_message_time"
+        <RelativeLayout
+            android:id="@+id/message_root"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textSize="12sp"
-            tools:text="3/15/2018 3:00 PM" />
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rect_round_white"
+            app:layout_constraintStart_toEndOf="@+id/imgPP"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </RelativeLayout>
-</FrameLayout>
+            <TextView
+                android:id="@+id/textView_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:maxWidth="240dp"
+                android:minWidth="40dp"
+                android:paddingStart="12dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="@string/lorem_ipsum" />
+
+
+            <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"-->
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtDateClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_root"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="3:00 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

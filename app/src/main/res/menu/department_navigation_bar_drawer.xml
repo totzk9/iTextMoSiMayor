@@ -4,17 +4,24 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_primary"
-            android:title="@string/navPrimary" />
+            android:title="@string/navMessages"
+            android:icon="@drawable/ic_messages"/>
         <item
             android:id="@+id/nav_resolved"
-            android:title="@string/navResolved" />
+            android:title="@string/navResolved"
+            android:icon="@drawable/ic_checked"/>
     </group>
 
     <item android:title="@string/navManage">
         <menu>
             <item
+                android:id="@+id/nav_communicate"
+                android:title="@string/navCommunicate"
+                android:icon="@drawable/ic_chat"/>
+            <item
                 android:id="@+id/nav_settings"
-                android:title="@string/navSettings" />
+                android:title="@string/navSettings"
+                android:icon="@drawable/ic_menu_manage"/>
         </menu>
     </item>
 

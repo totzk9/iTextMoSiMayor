@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "652816214663-2k658f53uaf6rch9hfs2hdlen13pfpns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gte.com.itextmosimayor",
+            "certificate_hash": "d31ddff57f5d968b269b2d6b856bdc4ac8d825f3"
+          }
+        },
+        {
           "client_id": "652816214663-vsvimgqf7b9m1l2bisl48vgvdi7b40bk.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652816214663-vsvimgqf7b9m1l2bisl48vgvdi7b40bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

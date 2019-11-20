@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="gte.com.itextmosimayor">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
         android:allowBackup="true"
@@ -22,36 +27,89 @@
         android:launchMode="singleInstance"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".login.LoginActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.AccountInfo"
+            android:theme="@style/NoActionBar2"/>
+        <activity
+            android:name=".activities.dialogs.ChatActivity"
+            android:theme="@style/NoActionBar2" />
+        <activity
+            android:name=".activities.login.LoginActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SMS.SMSMessaging"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/NoActionBar2" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".login.Verification" />
-        <activity android:name=".login.MobileNumberVerification" />
-        <activity android:name=".login.SignUp" />
-        <activity android:name=".login.UserCodeVerification" />
-        <activity android:name=".UnassignedMessages" />
-        <activity android:name=".dialogs.ForwardMessage" />
-        <activity android:name=".MainDepartment"
+        <activity android:name=".activities.login.Verification" />
+        <activity
+            android:name=".activities.login.MobileNumberVerification"
+            android:theme="@style/NoActionBar2" />
+        <activity
+            android:name=".activities.login.SignUp"
+            android:theme="@style/NoActionBar2" />
+        <activity
+            android:name=".activities.login.UserCodeVerification"
+            android:theme="@style/NoActionBar2" />
+        <activity
+            android:name=".activities.dialogs.Messages"
+            android:theme="@style/NoActionBar2" />
+        <activity android:name=".activities.dialogs.ForwardMessage" />
+        <activity android:name=".activities.dialogs.Respond" />
+        <activity
+            android:name=".activities.MainDepartment"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".dialogs.ViewDepartment" />
+        <activity
+            android:name=".activities.dialogs.ViewDepartment"
+            android:theme="@style/NoActionBar2"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".activities.dialogs.AddNewDepartment"
+            />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activities.settings.AccountSettings"
+            android:theme="@style/NoActionBar2" />
+        <activity
+            android:name=".activities.settings.AppSettings"
+            android:theme="@style/NoActionBar2" />
+
+        <service
+            android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_envelope" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
     </application>
 
 </manifest>
